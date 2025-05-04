@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Advanced HTML text: Task 2</title>
-    <style>
-      body {
-        background-color: #fff;
-        color: #333;
-        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-        padding: 1em;
-        margin: 0;
-      }
+<head>
+  <meta charset="utf-8"/>
+  <title>Advanced HTML text: Tasks 1 & 2</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
 
-      h1 {
-        font-size: 2rem;
-        margin: 0;
-        color: purple;
-      }
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: purple;
+    }
 
-      p {
-        margin: 0.5em 0;
-      }
+    p {
+      margin: 0.5em 0;
+    }
 
-      abbr, time {
-        color: green;
-      }
-    </style>
-  </head>
+    abbr, time {
+      color: green;
+    }
 
-  <body>
+    dt {
+      font-weight: bold;
+      color: purple;
+    }
 
-    <h1>Advanced text semantics</h1>
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      margin: 1em 0;
+      font-style: italic;
+    }
 
-    <p>Let's start with a quote:</p>
+    cite {
+      display: block;
+      margin-top: 0.5em;
+      font-style: normal;
+      color: #666;
+    }
 
-    <p>HTML, Hypertext Markup Language is by default accessible, if used correctly.</p>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
 
-    <p>CSS can also be used to make web pages more, or less, accessible.</p>
+<body>
 
-    <p>Chemical Formulae: H2O (Water), C2H6O (Ethanol).</p>
+  <h1>Advanced text semantics</h1>
 
-    <p>Dates: December 25th 2019 (Christmas Day), November 2nd 2019 (Día de los Muertos).</p>
+  <p>Let's start with a quote:</p>
 
-  </body>
+  <blockquote>
+    <q>Be excellent to each other.</q>
+    <cite>The Memoirs of Bill S. Preston, <abbr title="Esquire">Esq</abbr></cite>
+  </blockquote>
 
+  <!-- Task 1: Description list -->
+  <dl>
+    <dt><abbr title="Hypertext Markup Language">HTML</abbr></dt>
+    <dd>A markup language used to structure content on the web. It is accessible if used correctly.</dd>
+
+    <dt><abbr title="Cascading Style Sheets">CSS</abbr></dt>
+    <dd>A stylesheet language used to describe the presentation of a document written in HTML. It can improve or reduce accessibility.</dd>
+
+    <dt>Chemical Formulae</dt>
+    <dd>
+      H<sub>2</sub>O (Water), C<sub>2</sub>H<sub>6</sub>O (Ethanol)
+    </dd>
+  </dl>
+
+  <!-- Task 2: Time elements and semantics -->
+  <p>Important Dates:</p>
+  <ul>
+    <li><time datetime="2019-12-25">December 25th 2019</time> (Christmas Day)</li>
+    <li><time datetime="2019-11-02">November 2nd 2019</time> (Día de los Muertos)</li>
+  </ul>
+
+</body>
 </html>

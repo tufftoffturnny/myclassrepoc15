@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <!-- Survey Form Structure -->
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">Please fill out the form below to participate in the survey.</p>
+
+    <form id="survey-form">
+        
+        <!-- Name Input -->
+        <label for="name" id="name-label">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <!-- Email Input -->
+        <label for="email" id="email-label">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <!-- Number Input -->
+        <label for="number" id="number-label">Your Age:</label>
+        <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required>
+        
+        <!-- Dropdown -->
+        <label for="dropdown">Preferred Programming Language:</label>
+        <select id="dropdown" required>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+        
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+            <input type="radio" id="radio1" name="source" value="friend" required>
+            <label for="radio1">Friend</label>
+            <input type="radio" id="radio2" name="source" value="advertisement" required>
+            <label for="radio2">Advertisement</label>
+            <input type="radio" id="radio3" name="source" value="social_media" required>
+            <label for="radio3">Social Media</label>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Which technologies are you familiar with?</legend>
+            <input type="checkbox" id="checkbox1" name="technology" value="html">
+            <label for="checkbox1">HTML</label>
+            <input type="checkbox" id="checkbox2" name="technology" value="css">
+            <label for="checkbox2">CSS</label>
+            <input type="checkbox" id="checkbox3" name="technology" value="javascript">
+            <label for="checkbox3">JavaScript</label>
+        </fieldset>
+
+        <!-- Textarea for Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Enter any additional comments here" rows="5" cols="50"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
 </body>
 </html>

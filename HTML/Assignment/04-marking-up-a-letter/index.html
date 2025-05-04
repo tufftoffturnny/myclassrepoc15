@@ -1,45 +1,121 @@
-<!-- create document (start with a bang!) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mock Website</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Dr. Eleanor Gaye">
+  <title>Letter to Miss Eileen Dover</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      color: purple;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      color: #555;
+    }
+
+    address {
+      font-style: normal;
+      white-space: pre-line;
+    }
+  </style>
 </head>
 <body>
-    <!-- header area header -->
-    <header>
-        <h1>This is my website</h1>
-        <br>
-        <nav>
-            <!-- this is my navigation area -->
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
-        </nav>
-    </header>
-    <main>
-        <h2>List 1</h2>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
 
-        </ul>
-        <h2>List 2</h2>
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-        </ol>
-        <img src="/download (1).jpeg">
-    </main>
-    <footer>
-        &copy 2023 jason doty enterprises
-    </footer>
-    
+  <!-- Sender's address -->
+  <p class="sender-column">
+    <address>
+      <strong>Dr. Eleanor Gaye</strong><br>
+      Awesome Science Faculty<br>
+      University of Awesome<br>
+      Bobtown, CA 99999<br>
+      USA
+    </address>
+  </p>
+
+  <!-- Date -->
+  <p class="sender-column">
+    <time datetime="2016-01-20">20 January 2016</time>
+  </p>
+
+  <!-- Recipient's address -->
+  <address>
+    <strong>Miss Eileen Dover</strong><br>
+    4321 Cliff Top Edge<br>
+    Dover, CT9 XXX<br>
+    UK
+  </address>
+
+  <!-- Letter heading -->
+  <h1>Re: Application for Our Awesome Science Program</h1>
+
+  <p>Dear <strong>Miss Eileen Dover</strong>,</p>
+
+  <p>Thank you for your recent application to join us at the University of Awesome’s science program. I will answer your questions one by one below.</p>
+
+  <!-- Start dates -->
+  <h2>Starting dates</h2>
+  <p>We are happy to accommodate you starting at any time, although it would suit us better if you could start at the beginning of a semester. The next three semesters start on:</p>
+  <ul>
+    <li><time datetime="2016-02-20">20 February 2016</time></li>
+    <li><time datetime="2016-06-15">15 June 2016</time></li>
+    <li><time datetime="2016-09-30">30 September 2016</time></li>
+  </ul>
+
+  <p>Please let me know if this is ok, and if so which start date you would prefer.</p>
+
+  <!-- Subjects of study -->
+  <h2>Subjects of study</h2>
+  <p>At the Awesome Science Faculty, we have a pretty open-minded research facility — as long as the subjects fall somewhere in the realm of science and technology, we are happy to accept work on it. You seem like an intelligent, dedicated researcher, and just the kind of person we’d like to have on our team. Saying that, of the ideas you submitted we were most intrigued by the following (in order of preference):</p>
+  <ol>
+    <li>Turning <abbr title="HyperText Markup Language">HTML</abbr> into a real language</li>
+    <li>Using <abbr title="Cascading Style Sheets">CSS</abbr> to style rock stars</li>
+    <li>Animal content injection via the <abbr title="British Columbia">BC</abbr> government</li>
+  </ol>
+
+  <p>So please can you provide more information on each of these subjects, including how you plan to research them and the expected outcomes? Please also include your estimated timeline for each project.</p>
+
+  <!-- Exotic dance moves -->
+  <h2>Exotic dance moves</h2>
+  <p>Yes, you are right! As part of our postdoctoral community outreach program, we have an annual tradition of demonstrating <a href="http://www.example.com" title="Dr Gaye's exotic dance research">exotic dance moves</a> to the public. If you join us, you will be expected to take part in this.</p>
+
+  <p>We have a dance showcase every year, and like to include the following classics:</p>
+  <dl>
+    <dt>Chicken Dance</dt>
+    <dd>A crowd favorite with flapping arms and all.</dd>
+    <dt>Macarena</dt>
+    <dd>A true 90s throwback, sure to bring energy to any party.</dd>
+    <dt>Gangnam Style</dt>
+    <dd>A satirical pop performance with horse-riding motions.</dd>
+  </dl>
+
+  <p>You’ll be glad to know that we provide tutorials for all of our dance moves. Be <em>bold</em>, be <strong>yourself</strong>!</p>
+
+  <!-- Science reference -->
+  <p>We expect all of our researchers to uphold the motto of the university, which is <q>Be excellent to each other</q>. As seen in <cite>The memoirs of Bill S Preston, <abbr title="Esquire">Esq</abbr></cite>.</p>
+
+  <!-- Math and chemistry sub/superscripts -->
+  <p>By the way, we noted your strong background in physics and chemistry. We're looking forward to seeing your work on H<sub>2</sub>O, CO<sub>2</sub>, and E = mc<sup>2</sup>. Also, your paper on particle dispersion at 10<sup>3</sup> Hz was fascinating.</p>
+
+  <p>For a list of key academic dates, please refer to our <a href="http://www.example.com" title="table of awesome university important dates">important university dates</a>.</p>
+
+  <p>We look forward to working with you!</p>
+
+  <p>Best regards,</p>
+
+  <p><strong>Dr. Eleanor Gaye</strong><br>
+    <strong>Tel</strong>: 123-456-7890<br>
+    <strong>Email</strong>: eleanor.gaye@awesome.example.com
+  </p>
+
 </body>
 </html>

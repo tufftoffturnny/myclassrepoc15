@@ -1,50 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Advanced HTML text: Task 1</title>
-    <style>
-      body {
-        background-color: #fff;
-        color: #333;
-        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
-        padding: 1em;
-        margin: 0;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>Advanced HTML Text: Tasks 1 & 2</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.6 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
 
-      h1 {
-        font-size: 2rem;
-        margin: 0;
-        color: purple;
-      }
+    h1 {
+      font-size: 2rem;
+      color: purple;
+      margin-bottom: 0.5em;
+    }
 
-      dl {
-        color: gray;
-        margin: 0.5em 0;
-      }
+    section {
+      margin-bottom: 2em;
+    }
 
-      dt {
-        font-weight: bold;
-        color: purple;
-      }
+    dt {
+      font-weight: bold;
+      color: purple;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-  </head>
+    figure {
+      margin: 1em 0;
+    }
 
-  <body>
+    figcaption {
+      font-size: 0.9em;
+      color: gray;
+    }
 
+    blockquote {
+      font-style: italic;
+      margin: 1em 0;
+      border-left: 3px solid #ccc;
+      padding-left: 1em;
+    }
+
+    pre {
+      background-color: #f4f4f4;
+      padding: 1em;
+      overflow-x: auto;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
     <h1>Advanced HTML Animals</h1>
 
-    Llama
-    Tall, woolly quadruped, pointy ears. Sometimes rideable, but grumpy and spits a lot. Big fan of list items.
-    Anaconda
-    A very large constrictor snake; travels rapidly by way of anchors to sneak up on his prey.
-    Hippopotamus
-    His description is bottomless.
+    <!-- Task 1: Description List -->
+    <section>
+      <h2>Task 1: Animal Descriptions</h2>
+      <dl>
+        <dt>Llama</dt>
+        <dd>Tall, woolly quadruped, pointy ears. Sometimes rideable, but grumpy and spits a lot. Big fan of list items.</dd>
 
-  </body>
+        <dt>Anaconda</dt>
+        <dd>A very large constrictor snake; travels rapidly by way of anchors to sneak up on his prey.</dd>
 
+        <dt>Hippopotamus</dt>
+        <dd>His description is bottomless.</dd>
+      </dl>
+    </section>
+
+    <!-- Task 2: Advanced Semantic Elements -->
+    <section>
+      <h2>Task 2: Semantic Elements</h2>
+
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="A placeholder image showing a generic scene">
+        <figcaption>A visual representation of a topic. Placeholder image for demo purposes.</figcaption>
+      </figure>
+
+      <blockquote cite="http://example.com/bill-preston">
+        “Be excellent to each other.”
+      </blockquote>
+      <cite>The Memoirs of Bill S. Preston, <abbr title="Esquire">Esq</abbr></cite>
+
+      <p>Our curriculum includes <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> for beginners, leading up to more advanced topics like accessibility and <abbr title="Document Object Model">DOM</abbr> manipulation.</p>
+
+      <p>The next semester starts on <time datetime="2025-09-01">September 1st, 2025</time>.</p>
+
+      <p>Please <mark>read carefully</mark> before submitting your final exam answers.</p>
+
+      <pre><code>&lt;section&gt;
+  &lt;h2&gt;Example&lt;/h2&gt;
+  &lt;p&gt;This is a semantic section.&lt;/p&gt;
+&lt;/section&gt;
+      </code></pre>
+
+      <address>
+        <strong>Dr. Eleanor Gaye</strong><br>
+        Awesome Science University<br>
+        123 Science Road<br>
+        London, UK<br>
+        <strong>Tel</strong>: +44 123 456 7890<br>
+        <strong>Email</strong>: eleanor@example.com
+      </address>
+
+      <aside>
+        <p>This <strong>aside</strong> contains a fun fact: Hippopotamuses can't swim — they bounce off the bottom!</p>
+      </aside>
+    </section>
+  </main>
+</body>
 </html>
