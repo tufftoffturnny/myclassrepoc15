@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://via.placeholder.com/150x50?text=Logo" alt="Product Logo" />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <section id="form-section">
+      <h2>Join our newsletter</h2>
+      <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <input 
+          id="email" 
+          type="email" 
+          name="email" 
+          placeholder="Enter your email" 
+          required />
+        <input id="submit" type="submit" value="Subscribe" />
+      </form>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>High-quality materials</li>
+        <li>Fast shipping</li>
+        <li>24/7 Support</li>
+      </ul>
+    </section>
+
+    <section id="how-it-works">
+      <h2>How It Works</h2>
+      <iframe 
+        id="video" 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Product Demo" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-boxes">
+        <div class="box">
+          <h3>Basic</h3>
+          <p>$19.99/month</p>
+        </div>
+        <div class="box">
+          <h3>Standard</h3>
+          <p>$49.99/month</p>
+        </div>
+        <div class="box">
+          <h3>Premium</h3>
+          <p>$99.99/month</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
