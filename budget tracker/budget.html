@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Budget Tracker</title>
+</head>
+<body>
+
+    <h1>Budget Tracker</h1>
+
+    <!-- Display the current balance -->
+    <p>Balance: <span id="balance">$1000</span></p>
+
+    <!-- Input field for entering expense -->
+    <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+    <button onclick="addExpense()">Add Expense</button>
+
+    <script>
+        // Set initial balance
+        let balance = 1000;
+
+        function addExpense() {
+            // Get the entered expense amount
+            let expense = document.getElementById("expenseAmount").value;
+
+            // Convert input to a number
+            expense = Number(expense);
+
+            // Check if expense is valid
+            if (expense > 0) {
+                balance -= expense; // Subtract expense from balance
+                document.getElementById("balance").textContent = "$" + balance; // Update balance display
+            } else {
+                alert("Please enter a valid expense amount.");
+            }
+
+            // Clear input field
+            document.getElementById("expenseAmount").value = "";
+        }
+    </script>
+
+</body>
+</html>
